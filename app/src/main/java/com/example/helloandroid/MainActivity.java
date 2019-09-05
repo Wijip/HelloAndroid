@@ -23,6 +23,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Toast.makeText(this, "App on Stop", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "App on stop", Toast.LENGTH_SHORT).show();
     }
 }
