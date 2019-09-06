@@ -25,4 +25,22 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         Toast.makeText(this, "App on stop", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Toast.makeText(this, "App on Resume", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(this, "App on Restart", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(this, "App on Destroy", Toast.LENGTH_SHORT).show();
+    }
 }
